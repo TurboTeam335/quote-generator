@@ -1,0 +1,15 @@
+{
+  "sqltools.connections": [
+    {
+      "previewLimit": 50,
+      "driver": "SQLite",
+      "name": "quotes.db",
+      "database": "${workspaceFolder:quote-of-the-day}/microservice/quotes.db"
+    }
+  ],
+  "sqltools.useNodeRuntime": true,
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.autopep8"
+  },
+  "python.formatting.provider": "none"
+}
