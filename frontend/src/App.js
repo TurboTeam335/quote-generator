@@ -22,9 +22,11 @@ function App() {
         fetchRandomQuote();
     }, []);
 
+    const backendURL = "https://quote-microservice.herokuapp.com";
+
     const handleSave = async () => {
         try {
-            await fetch("http://localhost:3000/add", {
+            await fetch(`${backendURL}/add`, {
                 method: "POST",
                 headers: {
                     'Content-Type': 'application/json'
@@ -39,13 +41,14 @@ function App() {
     
     const handleGenerate = async () => {
         try {
-            const response = await fetch("http://localhost:4000/random");
+            const response = await fetch(`${backendURL}/random`);
             const data = await response.json();
             setDisplayQuote(data.quote);
         } catch (error) {
             console.error("Error fetching random quote:", error);
         }
     }
+    
     
 
 
