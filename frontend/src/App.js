@@ -22,7 +22,7 @@ function App() {
         fetchRandomQuote();
     }, []);
 
-    const backendURL = "https://quote-microservice.herokuapp.com";
+    const backendURL = process.env.REACT_APP_BACKEND_URL
 
     const handleSave = async () => {
         try {
