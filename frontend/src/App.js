@@ -11,7 +11,7 @@ function App() {
     useEffect(() => {
         const fetchRandomQuote = async () => {
             try {
-                const response = await fetch("http://localhost:3000/random");
+                const response = await fetch(`${backendURL}/random`);
                 const data = await response.json();
                 setDisplayQuote(data.quote);
             } catch (error) {
