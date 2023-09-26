@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Container, Typography } from '@mui/material';
+import { Container, Typography, Box } from '@mui/material';
 import QuoteInput from './component/QuoteInput';
 import QuoteDisplay from './component/QuoteDisplay';
 import ActionButtons from './component/ActionButtons';
