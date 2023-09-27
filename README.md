@@ -1,68 +1,73 @@
 # Quote Generator
 
-This is a simple full-stack application that allows users to save and generate quotes. It is composed of 3 parts: a React frontend, a Python microservice, and a relational database (SQLite).
 
-### Features
 
-* Save quotes to a database
-* Generate random quotes
+A robust full-stack application tailored for quote enthusiasts. Users can effortlessly save their favorite quotes and retrieve random ones at their leisure. Crafted with a modern React frontend, powered by a Python microservice, and backed by SQLite.
 
-### Installation
+![Preview](./img/Screenshot.png)
 
-To install the app, run the following command:
+## Table of Contents
+- [Live Demo](#live-demo)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation & Setup](#installation--setup) 
+- [Contributing](#contributing)
+- [License](#license)
 
+## Live Demo
+* [View Repository](https://github.com/TurboTeam335/quote-generator)
+* [Launch Application](https://6513747a847336316b8e4aa9--relaxed-biscuit-401065.netlify.app/)
+
+## Features
+
+* Save Quotes: Never let a good quote fade away. Store them safely and securely.
+*  Random Quotes: Need inspiration? Generate a random quote with a simple click.
+
+## Technologies Used
+
+The following technologies are used in this project:
+
+* React
+* Material UI
+* Python
+* Flask
+* SQLAlchemy
+* SQLite
+
+
+## Installation & Setup
+
+### Frontend
+
+Install Dependencies:
 `````npm install`````
 
-### Usage
-
-To run the app, run the following command:
-
-
-Sure, here is a full professional README.md file for your "quote-of-the-day" app, as if it were written in Visual Studio Code with all the syntax to make it pleasantly appealing in GitHub:
-
-Markdown
-## Quote of the Day App
-
-This is a simple full-stack application that allows users to save and generate quotes. It is composed of 3 parts: a React frontend, a Python microservice, and a relational database (SQLite).
-
-### Features
-
-* Save quotes to a database
-* Generate random quotes
-* Display the quote of the day
-
-### Installation
-
-To install the app, run the following command:
-
-Use code with caution. Learn more
-npm install
-
-
-### Usage
-
-To run the app, run the following command:
-
+Run the Application:
 `````npm start`````
 
-The app will be running on http://localhost:3000 by default.
+The application should open in your default browser at http://localhost:3000.
 
-**Backend Microservice**
+### Backend Microservice
 
-To install the backend microservice, run the following command:
-
+Install Dependencies:
 `````pip install -r requirements.txt`````
 
-To run the backend microservice, run the following command:
-
+Run the Microservice:
 `````python app.py`````
 
-The microservice will be running on http://localhost:4000 by default.
+Access the microservice at http://localhost:4000.
 
-### Contributing
 
-If you would like to contribute to the app, please fork the repository and create a pull request.
 
-### License
+## Contributing
+
+Eager to improve or add new features? We'd love your help!
+
+Fork the repository.
+Implement your changes.
+Submit a pull request.
+All contributions are greatly appreciated!
+
+## License
 
 The app is licensed under the MIT license.
