@@ -4,14 +4,14 @@ import sqlite3
 from service import QuoteService
 from repository import QuoteRepository
 import os
-from flask_cors import CORS  # <-- import CORS here
+from flask_cors import CORS  
 
 app = Flask(__name__)
-CORS(app)  # <-- enable CORS for the app here
+CORS(app)  
 
 # Setting up SQLite connection and Repository
 conn = sqlite3.connect("quotes.db")
-quote_repository = QuoteRepository()  # No need to pass the conn
+quote_repository = QuoteRepository()  
 quote_service = QuoteService(quote_repository)
 
 @app.route("/add", methods=["POST"])
