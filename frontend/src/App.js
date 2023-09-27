@@ -5,6 +5,7 @@ import QuoteDisplay from './component/QuoteDisplay';
 import ActionButtons from './component/ActionButtons';
 
 function App() {
+    const backendURL = "https://quote-microservice-7b005401d090.herokuapp.com"
     const [quote, setQuote] = useState("");
     const [displayQuote, setDisplayQuote] = useState("");
 
@@ -22,7 +23,6 @@ function App() {
     }, [backendURL]);  // <-- Added dependency here
     
 
-    const backendURL = "https://quote-microservice-7b005401d090.herokuapp.com"
 
     const handleSave = async () => {
         try {
