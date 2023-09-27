@@ -6,6 +6,10 @@ import ActionButtons from './component/ActionButtons';
 
 function App() {
     const backendURL = "https://quote-microservice-7b005401d090.herokuapp.com"
+
+     // When testing the local backend
+    //  const backendURL = "http://localhost:4000";
+     
     const [quote, setQuote] = useState("");
     const [displayQuote, setDisplayQuote] = useState("");
 
