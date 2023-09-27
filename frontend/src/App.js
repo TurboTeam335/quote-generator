@@ -18,11 +18,11 @@ function App() {
                 console.error("Error fetching random quote:", error);
             }
         };
-
         fetchRandomQuote();
-    }, [backendURL]);
+    }, [backendURL]);  // <-- Added dependency here
+    
 
-    const backendURL = process.env.REACT_APP_BACKEND_URL
+    const backendURL = "https://quote-microservice-7b005401d090.herokuapp.com"
 
     const handleSave = async () => {
         try {
